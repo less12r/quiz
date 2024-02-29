@@ -67,10 +67,7 @@ if (isset($_GET['idCategoria'])) {
         </div>
     </div>
 
-    <!-- Pie de página -->
-    <footer class="footer">
-        <p>© 2024 Lesly Soto</p>
-    </footer>
+
 
 </body>
 
