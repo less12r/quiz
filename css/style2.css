@@ -1,0 +1,100 @@
+.container2{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding: 230px 50px 40px 50px;
+    font-family: fantasy;
+    font-size: 40px;
+}
+
+.container_cont{
+    width: 80%; 
+    max-width: 1000px;
+    padding: 20px;
+    border: 1px solid #000000;
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+.intro{
+    background-color: transparent;
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+    padding: 250px 30px 30px 30px;
+}
+
+#rojo {
+    display: none;  /* Inicia oculto */
+    margin-top: 10px; /* Añade un poco de espacio */
+}
+#amarillo{
+    display: none;
+    margin-top: 10px;
+}
+#azul{
+    display: none;
+    margin-top: 10px;
+}
+#naranja{
+    display: none;
+    margin-top: 10px;
+}
+#morado{
+    display: none;
+    margin-top: 10px;
+}
+#verde{
+    display: none;
+    margin-top: 10px;
+}
+
+.botonImg{
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease-out;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.botonImg:hover {
+    transform: scale(1.1); /* Escala la imagen al 110% cuando se pasa el puntero */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra aumentada al pasar el puntero */
+}
+
+.botonImg:hover{
+    transform: scale(1.1); 
+}
+
+.botonImagen{
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease-out;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+
+.botonImagen:hover{
+    transform: scale(1.1); /* Escala la imagen al 110% cuando se pasa el puntero */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra aumentada al pasar el puntero */
+    transform: scale(1.1); 
+
+}
+
+.btnImg{
+    transition: transform 0.3s ease-out;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+}
+
+.btnImg:hover {
+    transform: scale(1.1); /* Escala la imagen al 110% cuando se pasa el puntero */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra aumentada al pasar el puntero */
+}
+
+.btnImg:hover{
+    transform: scale(1.1); 
+}
+
+
+

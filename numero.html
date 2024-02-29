@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icono/iconu.ico" type="image/x-icon">
+
+    <!--Importacion de estilos css y bootstrap para que la app sea responsive-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Números</title>
+</head>
+<header>
+    <div class="px-3 py-2 text-white border-bottom flex-wrap justify-content-center"
+        style="background-color: rgba(0, 0, 0, 0.0);">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/"
+                    class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                    <img src="src/logo.png" alt="Learning English" class="me-2" width="auto" height="40">
+                    <div class="logo-text">Numbers</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="px-3 py-2 border-bottom mb-3">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
+            </form>
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                <li>
+                    <a href="index.html" class="nav-link text-secondary">
+                        <img class="bi d-block mx-auto mb-1" src="src/casa.svg" width="24" height="24">
+                        Home
+                    </a>
+                </li>
+                <li style="margin-bottom: 10px;" class="ms-3">
+                    <a href="vocal.html" class="no-blue">
+                        <img class="bi d-block mx-auto mb-1" src="src/vocal.svg" width="24" height="24">
+                        Alphabet
+                    </a>
+                </li>
+
+                <li style="margin-bottom: 10px;" class="ms-3">
+                    <a href="color.html" class="no-blue">
+                        <img class="bi d-block mx-auto mb-1" src="src/color.svg" width="24" height="24">
+                        Colors
+                    </a>
+                </li>
+
+                <li style="margin-bottom: 10px;" class="ms-3">
+                    <a href="numero.html" class="no-blue">
+                        <img class="bi d-block mx-auto mb-1" src="src/numbers.svg" width="24" height="24">
+                        Numbers
+                    </a>
+                </li>
+                <li style="margin-bottom: 10px;" class="ms-3">
+                    <a href="instructions.html" class="no-blue">
+                        <img class="bi d-block mx-auto mb-1" src="src/instrucciones.png" width="24" height="24">
+                        Instrucctions
+                    </a>
+                </li>
+
+                <li style="margin-bottom: 10px;" class="ms-3">
+                    <a href="quiz/index.php" class="no-blue">
+                        <img class="bi d-block mx-auto mb-1" src="src/leccion.png" width="24" height="24">
+                        Lessons
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+
+
+<body class="body">
+    
+    <div class="container2">
+        <img src="src/numeroani.png" width="300px" height="300px">
+        <p style="font-style: oblique;">'Pulsando, escuchando y observando vamos memorizando'</p>
+        <p style="font-style: oblique;">'Press, listen and look let's memorize'</p>
+        <div>
+            <a style="font-family: 'Times New Roman', Times, serif; font-style: inherit;"> Pronunciation</a>
+        </div>
+        <div class="container_cont">
+
+            <div class="row align-items-start">
+                <div class="col">
+                    <img src="numeros/cero.png" onclick="sound0()" class="btnImg" alt="" type="button" width="200px"
+                        height="250px">
+
+                    <script>
+                        function sound0() {
+                            var snd = new Audio('a_numero/0.mp3')
+                            snd.play()
+                        }
+                    </script>
+                </div>
+
+                <div class="col">
+                    <img src="numeros/uno.png" onclick="sound11()" class="btnImg" alt="" type="button" width="150px"
+                        height="250px">
+                    <img src="img_numero/vaca.png" onclick="soundo()" class="btnImg" alt="" type="" width="150px"
+                        height="150px">
+
+                    <script>
+                        function sound11() {
+                            var snd = new Audio('a_numero/1.mp3')
+                            snd.play()
+                        }
+
+                        function soundo() {
+                            var snd = new Audio('a_numero/one.mp3');
+                            snd.play();
+                        }
+                    </script>
+                </div>
+
+                <div class="w-100"></div>
+
+                <div class="col">
+                    <img src="numeros/dos.png" onclick="sound22()" class="btnImg" alt="" type="button" width="200px"
+                        height="250px">
+                    <img src="img_numero/rdos.png" onclick="soundt()"    class="btnImg" alt="" type="" width="150px" height="100px">
+
+                    <script>
+                        function sound22() {
+                            var snd = new Audio('a_numero/2.mp3')
+                            snd.play()
+                        }
+
+                        function soundt() {
+                            var snd = new Audio('a_numero/two.mp3');
+                            snd.play();
+                        }
+
+                    </script>
+                </div>
+
+                <div class="col">
+                    <img src="numeros/tres.png" onclick="sound33()" class="btnImg" alt="" type="button"
+                        width="200px" height="250px">
+                    <img src="img_numero/rtres.png" onclick="soundr()" class="btnImg" alt="" width="150px" height="100px">
+
+                    <script>
+                        function sound33() {
+                            var snd = new Audio('a_numero/3.mp3')
+                            snd.play()
+                        }
+
+                        function soundr() {
+                            var snd = new Audio('a_numero/three.mp3');
+                            snd.play();
+                        }
+
+                    </script>
+                </div>
+
+                <div class="w-100"></div>
+
+                <div class="col">
+                    <img src="numeros/cuatro.png" onclick="sound44()" class="btnImg" alt="" type="button" width="200px"
+                        height="250px">
+                    <img src="img_numero/rcuatro.png" onclick="soundf()" class="btnImg" alt="" width="150px" height="100px">
+
+                    <script>
+                        function sound44() {
+                            var snd = new Audio('a_numero/4.mp3')
+                            snd.play()
+                        }
+
+                        function soundf() {
+                            var snd = new Audio('a_numero/for.mp3');
+                            snd.play();
+                        }
+                    </script>
+                </div>
+
+                <div class="col">
+                    <img src="numeros/cinco.png" onclick="sound55()" class="btnImg" alt="" type="button" width="200px"
+                        height="250px">
+                    <img src="img_numero/rcinco.png" onclick="soundv()" class="btnImg" alt="" width="150px" height="100px">
+
+                    <script>
+                        function sound55() {
+                            var snd = new Audio('a_numero/5.mp3')
+                            snd.play()
+                        }
+
+                        function soundv() {
+                            var snd = new Audio('a_numero/five.mp3')
+                            snd.play()
+                        }
+                    </script>
+                </div>
+
+                <div class="w-100"></div>
+
+                <div class="col">
+                    <img src="numeros/seis.png" onclick="sound66()" class="btnImg" alt="" type="button" width="200px"
+                        height="250px">
+                    <img src="img_numero/rseis.png" onclick="sounds()" class="btnImg" alt="" width="160px" height="120px">
+
+                    <script>
+                        function sound66() {
+                            var snd = new Audio('a_numero/6.mp3')
+                            snd.play()
+                        }
+
+                        function sounds() {
+                            var snd = new Audio('a_numero/six.mp3')
+                            snd.play()
+                        }
+                    </script>
+                </div>
+
+                <div class="col">
+                    <img src="numeros/siete.png" onclick="sound77()" class="btnImg" alt="" type="button" width="200px"
+                        height="250px">
+                    <img src="img_numero/rsiete.png" onclick="sounde()" class="btnImg" alt="" width="160px" height="120px">
+
+                    <script>
+                        function sound77() {
+                            var snd = new Audio('a_numero/7.mp3')
+                            snd.play()
+                        }
+
+                        function sounde() {
+                            var snd = new Audio('a_numero/seven.mp3')
+                            snd.play()
+                        }
+                    </script>
+                </div>
+
+                <div class="w-100"></div>
+
+                <div class="col">
+                    <img src="numeros/ocho.png" onclick="sound88()" class="btnImg" alt="" type="button" width="200px"
+                        height="250px">
+                    <img src="img_numero/rocho.png" onclick="soundg()" class="btnImg" alt="" width="180px" height="140px">
+
+                    <script>
+                        function sound88() {
+                            var snd = new Audio('a_numero/8.mp3')
+                            snd.play()
+                        }
+
+                        function soundg() {
+                            var snd = new Audio('a_numero/eigth.mp3')
+                            snd.play()
+                        }
+                    </script>
+                </div>
+
+                <div class="col">
+                    <img src="numeros/nueve.png" onclick="sound99()" class="btnImg" alt="" type="button" width="200px"
+                        height="250px">
+                    <img src="img_numero/rnueve.png" onclick="soundn()" class="btnImg" alt="" width="150px" height="100px">
+
+                    <script>
+                        function sound99() {
+                            var snd = new Audio('a_numero/9.mp3')
+                            snd.play()
+                        }
+
+                        function soundn() {
+                            var snd = new Audio('a_numero/nine.mp3')
+                            snd.play()
+                        }
+                    </script>
+                </div>
+
+                <div class="w-100"></div>
+
+                <div class="col">
+                    <img src="numeros/diez.png" onclick="sound10()" class="btnImg" alt="" type="button" width="200px"
+                        height="250px">
+                    <img src="img_numero/rdiez.png" onclick="soundi()" class="btnImg" alt="" width="150px" height="100px">
+
+                    <script>
+                        function sound10() {
+                            var snd = new Audio('a_numero/10.mp3')
+                            snd.play()
+                        }
+
+                        function soundi() {
+                            var snd = new Audio('a_numero/ten.mp3')
+                            snd.play()
+                        }
+                    </script>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer class="footer">
+    <p>© 2024 Lesly Soto</p>
+</footer>
+
+</html>

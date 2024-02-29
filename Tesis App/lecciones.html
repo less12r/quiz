@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Importacion de estilos css y bootstrap para que la app sea responsive-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="icon" href="src/lesson.ico" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Lecciones</title>
+</head>
+
+<body class="body">
+    <header>
+        <div class="px-3 py-2 text-white border-bottom flex-wrap justify-content-center"
+            style="background-color: rgba(0, 0, 0, 0.0);">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/"
+                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                        <img src="src/logo.png" alt="Learning English" class="me-2" width="auto" height="40">
+                        <div class="logo-text">Aprende Ingles</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="px-3 py-2 border-bottom mb-3">
+            <div class="container d-flex flex-wrap justify-content-center">
+                <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                    <li>
+                        <a href="index.html" class="nav-link text-secondary">
+                            <img class="bi d-block mx-auto mb-1" src="src/casa.svg" width="24" height="24">
+                            Inicio
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;" class="ms-3">
+                        <a href="color.html" class="no-blue">
+                            <img class="bi d-block mx-auto mb-1" src="src/color.svg" width="24" height="24">
+                            Colores
+                        </a>
+                    </li>
+
+                    <li style="margin-bottom: 10px;" class="ms-3">
+                        <a href="numero.html" class="no-blue">
+                            <img class="bi d-block mx-auto mb-1" src="src/numbers.svg" width="24" height="24">
+                            Números
+                        </a>
+                    </li>
+
+                    <li style="margin-bottom: 10px;" class="ms-3">
+                        <a href="vocal.html" class="no-blue">
+                            <img class="bi d-block mx-auto mb-1" src="src/vocal.svg" width="24" height="24">
+                            Abecedario
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;" class="ms-3">
+                        <a href="instructions.html" class="no-blue">
+                            <img class="bi d-block mx-auto mb-1" src="src/instrucciones.png" width="24" height="24">
+                            Instrucciones
+                        </a>
+                    </li>
+
+                    <li style="margin-bottom: 10px;" class="ms-3">
+                        <a href="lecciones.html" class="no-blue">
+                            <img class="bi d-block mx-auto mb-1" src="src/leccion.png" width="24" height="24">
+                            Lecciones
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+
+    <div class="container2">
+        <h1 >Evaluación</h1>
+
+        <form id="quizForm">
+            <div class="pregunta">
+                <img src="img/apple.png" alt="Manzana">
+                <p>¿CCómo se dice café en ingles?</p>
+                <label><input type="radio" name="q1" value="apple"> Brown</label>
+                <label><input type="radio" name="q1" value="banana"> Black</label>
+                <label><input type="radio" name="q1" value="orange"> Orange</label>
+            </div>
+
+            <div class="pregunta">
+                <img src="img/cat.png" alt="Gato">
+                <p>¿Como se dice "A" en inglés?</p>
+                <label><input type="radio" name="q2" value="cat"> En</label>
+                <label><input type="radio" name="q2" value="dog"> Ti</label>
+                <label><input type="radio" name="q2" value="bird"> Ei</label>
+            </div>
+
+            <div class="pregunta">
+                <img src="img/sun.png" alt="Sol">
+                <p>¿Cómo se dice '5" en inglés?</p>
+                <label><input type="radio" name="q3" value="sun"> Ten</label>
+                <label><input type="radio" name="q3" value="moon"> Nine</label>
+                <label><input type="radio" name="q3" value="star"> Five</label>
+            </div>
+
+            <button type="button" onclick="calcularCalificacion()">Calificar</button>
+        </form>
+
+        <div id="resultado"></div>
+
+        <script src="eva.js"></script>
+    </div>
+
+
+</body>
+
+<footer class="footer">
+    <p>© 2024 Lesly Soto</p>
+</footer>
+
+</html>

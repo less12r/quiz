@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="pagina-web-de-aprendizaje-de-ingles" content="recursos">
+    <meta name="imagenes,colores" content="articulos de aprendizaje">
+    <link rel="icon" href="icono/icono.ico" type="image/x-icon">
+
+    <title>Learning English</title>
+    <!--Importacion de estilos css y bootstrap para que la app sea responsive-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<!-- Definición del cuerpo de la página -->
+<body class="body">
+    <!-- Cabecera de la página -->
+    <header>
+        <!-- Barra superior con el logo y el nombre del sitio -->
+        <div class="px-3 py-2 text-white border-bottom flex-wrap justify-content-center"
+            style="background-color: rgba(0, 0, 0, 0.0);">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <!-- Enlace al inicio con el logo y el nombre del sitio -->
+                    <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                        <img src="src/logo.png" alt="Learning English" class="me-2" width="auto" height="40">
+                        <div class="logo-text">Learning English</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra de navegación -->
+        <div class="px-3 py-2 border-bottom mb-3">
+            <div class="container d-flex flex-wrap justify-content-center">
+                <!-- Formulario de búsqueda (actualmente vacío) -->
+                <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
+                </form>
+                <!-- Lista de enlaces de navegación -->
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                    <!-- Enlace a la página de inicio -->
+                    <li>
+                        <a href="#" class="nav-link text-secondary">
+                            <img class="bi d-block mx-auto mb-1" src="src/casa.svg" width="24" height="24">
+                            Home
+                        </a>
+                    </li>
+                    <!-- Otros enlaces -->
+                    <li style="margin-bottom: 10px;" class="ms-3">
+                        <a href="vocal.html" class="no-blue">
+                            <img class="bi d-block mx-auto mb-1" src="src/vocal.svg" width="24" height="24">
+                            <span>Alphabet</span>
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;" class="ms-3">
+                        <a href="color.html" class="no-blue">
+                            <img class="bi d-block mx-auto mb-1" src="src/color.svg" width="24" height="24">
+                            Colors
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;" class="ms-3">
+                        <a href="numero.html" class="no-blue">
+                            <img class="bi d-block mx-auto mb-1" src="src//numbers.svg" width="24" height="24">
+                            Numbers
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;" class="ms-3">
+                        <a href="instructions.html" class="no-blue">
+                            <img class="bi d-block mx-auto mb-1" src="src/instrucciones.png" width="24" height="24">
+                            Instructions
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;" class="ms-3">
+                        <a href="quiz/index.php" class="no-blue">
+                            <img class="bi d-block mx-auto mb-1" src="src/leccion.png" width="24" height="24">
+                            Lessons
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Contenedor principal -->
+    <div class="container-a">
+        <!-- Contenedor de la imagen -->
+        <div class="container-img">
+            <img src="src/dibujos.png" alt="Estudiando" width="800px" height="480px">
+        </div>
+        <!-- Script de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    </div>
+
+    <!-- Texto centralizado -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col align-self-center" style="font-size: 50px; font-family: 'Times New Roman', Times, serif; font-style: oblique;">
+                It's time to listen, sing, learn and play
+            </div>
+        </div>
+    </div>
+
+    <!-- Video centrado -->
+    <center>
+        <video controls width="800" height="480">
+            <source src="src/cancion_abc.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </center>
+</body>
+
+
+<footer class="footer">
+    <p>© 2024 Lesly Soto</p>
+</footer>
+</html>
